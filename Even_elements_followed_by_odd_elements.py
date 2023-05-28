@@ -1,10 +1,11 @@
 n=int(input())
 ls=list(map(int,input().split()))
-ns=[]
-for i in ls:
-    if i%2==0:
-        ns.append(i)
+a=[]
+b=[]
 for i in ls:
     if i%2!=0:
-        ns.append(i)
-print(*ns)
+        a.append(i)
+    else:
+        b.append(i)
+c=b+a
+print(*c)
